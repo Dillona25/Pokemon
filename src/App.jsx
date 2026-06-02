@@ -74,7 +74,7 @@ function App() {
   }, [search, filter]);
 
   return (
-    <section className="p-5">
+    <section className="px-2 py-5">
       <div className="container card p-5">
         <FilterBar
           search={search}

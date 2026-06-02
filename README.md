@@ -1,16 +1,18 @@
-# React + Vite
+# Pokemon Glossary
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Created here is a simple pokemon glossary where you can browse pokemon characters and their main stats such as their pokemon types, their health, and their attack damage. Looking for something specific? You can also search for a specific pokemon or filter by the attack damage or health!
 
-Currently, two official plugins are available:
+## How to modify locally
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+1. Clone the GitHub Repo to your local machine
+2. Open the project and run `npm install`
+3. Next, run `npm run dev` to run the project in your browser
+4. Looking to expand the Pokemon search results? You can do this in the `api.js` file by modifying the `limit` url parameter to your desired amount
 
-## React Compiler
+## API used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+https://pokeapi.co/docs/v2
 
-## Expanding the ESLint configuration
+## Deployed Site
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+https://dillona25.github.io/Pokemon/
