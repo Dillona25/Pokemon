@@ -2,6 +2,7 @@ import { use, useEffect, useState } from "react";
 import { FilterBar } from "./components/filterBar";
 import { Cards } from "./components/cards";
 import { getPokemonData } from "./api/api";
+import pokieFallback from "../src/img/pokie-fallback.jpeg";
 
 function App() {
   const [pokemonData, setPokemonData] = useState([]);
@@ -26,12 +27,12 @@ function App() {
 
           // Just going to return the data we want to pass to each card!
           return {
-            name: p.name,
-            image: data.sprites.front_default,
-            type: data.types.map((t) => t.type.name),
+            name: p.name ?? "No name found",
+            image: data.sprites.front_default ?? pokieFallback,
+            type: data.types.map((t) => t.type.name) ?? "No type found",
             id: data.id,
-            hp: getStats(data.stats, "hp"),
-            attack: getStats(data.stats, "attack"),
+            hp: getStats(data.stats, "hp") ?? "--",
+            attack: getStats(data.stats, "attack") ?? "--",
           };
         }),
       );
